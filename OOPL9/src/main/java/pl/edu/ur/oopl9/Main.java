@@ -14,7 +14,6 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-
 public class Main {
 
     /**
@@ -90,10 +89,7 @@ public class Main {
             System.out.println("Auto "+i+" :"+samochody.get(i));
         }
          */
-        
-        
         // 4
-        
         Map<String, String> slowa = new HashMap<>(20);
         slowa.put("pies", "dog");
         slowa.put("kot", "cat");
@@ -125,6 +121,18 @@ public class Main {
 
             String n = input.next();
 
+            if ("koniec".equals(n)) 
+            {
+                k = 0;
+            } 
+            else if (n.equals(n)) 
+            {
+                if (slowa.get(n) == null)System.out.println("Nie ma takiego słowa w bazie");   
+                 else System.out.println(slowa.get(n));
+            }
+
+        }
+        /*
             if ("pies".equals(n))  System.out.println(slowa.get("pies"));   
              else if ("kot".equals(n))  System.out.println(slowa.get("kot"));   
              else if ("czapka".equals(n))  System.out.println(slowa.get("czapka"));   
@@ -147,11 +155,10 @@ public class Main {
              else if ("syn".equals(n))  System.out.println(slowa.get("syn"));   
              else if ("koniec".equals(n))  k = 0;  
              else  System.out.println("Nie ma takiego słowa w bazie");
-                
-            
-        }
+         */
 
-       
     }
+
+}
 
 }
